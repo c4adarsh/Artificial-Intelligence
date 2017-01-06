@@ -1,0 +1,689 @@
+[Executed at: Wed Dec 14 2:18:11 PST 2016]
+
+Python2.7
+gvals.txt
+Input File:3
+2
+Female(Alice)
+Male(Bob)
+2
+Female(Alice)
+Male(Bob)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:4
+2
+Female(Alice)
+Male(Bob)
+2
+Female(Bob)
+Male(Alice)
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:5
+2
+Female(Alice)
+Male(Bob)
+2
+Teacher(Bob)
+Student(Alice)
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:6
+2
+Female(Alice)
+Male(Bob)
+2
+Female(x)
+Male(y)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:7
+2
+Female(Alice)
+Male(Bob)
+2
+Human(x)
+Teacher(y)
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:8
+2
+Parent(Alice,Bob)
+Sibling(Charlie,Denis)
+2
+Parent(x,y)
+Sibling(x,y)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:9
+2
+Children(Alice,Bob,Charlie)
+Children(Charlie,Bob,Alice)
+1
+Children(x,y,z)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:10
+2
+Friends(Alice,Bob,Charlie,Diana)
+Friends(Diana,Charlie,Bob,Alice)
+1
+Friends(a,b,c,d)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:11
+2
+Sibling(Alice,Bob)
+Sibling(Charlie,Denis)
+2
+Parent(x,y)
+Mother(x,y)
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:12
+2
+~Female(Alice)
+~Male(Bob)
+2
+(~Female(x))
+(~Male(y))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:13
+2
+~Female(Alice)
+~Male(Bob)
+2
+Female(x)
+Male(y)
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:14
+2
+Female(Alice)
+Male(Bob)
+1
+(Female(x) | Male(x))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:15
+2
+Female(Alice)
+Male(Bob)
+3
+(Female(x) | Human(x))
+(Male(y) | Human(y))
+(~Human(z))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:16
+2
+Ancestor(Alice,Bob)
+Ancestor(Alice,Denis)
+2
+Parent(Alice,x)
+(Ancestor(Alice,y) | (~Parent(x,y)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:17
+2
+Female(Alice)
+Male(Bob)
+1
+(Female(x) & Male(y))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:18
+2
+Ancestor(Alice,Bob)
+Ancestor(Alice,Denis)
+1
+(Parent(Alice,x) & (Ancestor(Alice,y) | (~Parent(x,y))))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:19
+2
+~Student(Alice)
+~Student(Bob)
+2
+Incollege(x)
+(~(Incollege(y) & Student(y)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:20
+2
+~Student(Alice)
+~Student(Bob)
+1
+(~(Incollege(y) | Student(y)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:21
+2
+Student(Alice)
+Student(Bob)
+1
+(~(~Student(x)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:22
+2
+Student(Alice)
+Student(Bob)
+1
+(~(~(~(~Student(x)))))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:23
+2
+Teacher(Alice)
+Student(Bob)
+1
+(Incollege(x) & (Teacher(x) & Student(x)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:24
+2
+Teacher(Alice)
+Student(Bob)
+1
+(Incollege(x) | (Teacher(x) | Student(x)))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:25
+2
+Teacher(Alice)
+Student(Bob)
+1
+(Incollege(x) & (Teacher(x) | Student(x)))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:26
+2
+Incollege(Alice)
+Inlibrary(Bob)
+2
+(Incollege(x) & (Teacher(x) | Student(x)))
+(Inlibrary(a) & (Teacher(a) | Student(a)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:27
+2
+Teacher(Alice)
+Student(Bob)
+1
+(Incollege(x) | (Teacher(x) & Student(x)))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:28
+2
+Teacher(Alice)
+Student(Bob)
+2
+Incollege(y)
+((~Incollege(x)) | (Teacher(x) & Student(x)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:29
+2
+~Student(Alice)
+~Student(Bob)
+2
+(~(Incollege(x) | (Teacher(x) & Student(x))))
+Teacher(y)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:30
+2
+~Teacher(Alice)
+~Student(Bob)
+1
+(~(Incollege(x) | (Teacher(x) & Student(x))))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:31
+2
+~Incollege(Alice)
+~Incollege(Bob)
+1
+(~(Incollege(x) | (Teacher(x) & Student(x))))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:32
+2
+~Teacher(Alice)
+~Student(Bob)
+2
+Incollege(a)
+(~(Incollege(x) & (Teacher(x) | Student(x))))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:33
+2
+~Teacher(Alice)
+~Student(Bob)
+1
+(~(Incollege(x) & (Teacher(x) | Student(x))))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:34
+2
+Teacher(Alice)
+Student(Bob)
+3
+(Incollege(x) => Teacher(x))
+(Incollege(y) => Student(y))
+Incollege(z)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:35
+2
+Teacher(Alice)
+Student(Bob)
+2
+(Incollege(x) => Teacher(x))
+(Incollege(y) => Student(y))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:36
+2
+Inusa(Alice)
+Inusa(Bob)
+3
+((Inla(x) => Inca(x)) => Inusa(x))
+(Inla(y) => Inca(y))
+Inla(z)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:37
+2
+Inusa(Alice)
+Inusa(Bob)
+3
+((Inla(x) => Inca(x)) => Inusa(x))
+(~Inca(y))
+Inla(z)
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:38
+2
+Inusa(Alice)
+Inusa(Bob)
+2
+(Inla(x) => Inusa(x))
+(Inusa(y) => Inla(y))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:39
+2
+Inusa(Alice)
+Inusa(Bob)
+3
+(Inca(x) => Inusa(x))
+(Inla(y) => Inca(y))
+(Inusa(z) => Inla(z))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:40
+2
+Inusa(Alice)
+Inusa(Bob)
+2
+(Inchina(x) | Inusa(x))
+((~Inusa(y)) | (~Inchina(y)))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:41
+2
+Employee(Alice)
+Employee(Bob)
+3
+(Student(x) | Employee(x))
+((~Student(y)) |  (~Earns(y)))
+(Employee(z) => Earns(z))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:42
+2
+Classmate(Alice,Bob)
+Classmate(Bob,Alice)
+1
+(Classmate(x,y) => Classmate(y,x))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:43
+2
+Employee(Alice)
+Employee(Bob)
+1
+(Employee(x) | Employee(x))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:44
+2
+Employee(Alice)
+Employee(Bob)
+1
+(Employee(x) | Employee(y))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:45
+2
+Employee(Alice)
+Employee(Bob)
+1
+(Employee(x) | (Employee(x) | Employee(x)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:46
+2
+Employee(Alice)
+Employee(Bob)
+1
+(Employee(x) & (Employee(y) & Employee(z)))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:47
+2
+Schoolmate(Alice,Bob)
+Schoolmate(Bob,Alice)
+2
+((Inschool(x) & Inschool(y)) => Schoolmate(x,y))
+Inschool(a)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:48
+2
+Inschool(Alice)
+Inschool(Bob)
+2
+(Schoolmate(x,y) => Inschool(x))
+(Schoolmate(a,b) => Inschool(b))
+Correct output:
+FALSE
+FALSE
+Content from your output file:
+FALSE
+FALSE
+test case passed!
+Input File:49
+2
+Daughter(Alice)
+Son(Bob)
+3
+(Sibling(a,b) => Sibling(b,a))
+Daughter(x)
+Son(y)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:50
+2
+Sibling(Alice,Bob)
+Sibling(Bob,Alice)
+2
+((Kid(a) | Sibling(a,b)) => Sibling(b,a))
+Kid(x)
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:51
+2
+Student(Alice)
+Student(Bob)
+1
+(Student(a) & (Student(b) & (Student(c) & (Student(d) & (Student(e) & Student(f))))))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
+Input File:52
+2
+Student(Alice)
+Student(Bob)
+1
+(Student(a) | (Student(b) | (Student(c) | (Student(d) | (Student(e) | Student(f))))))
+Correct output:
+TRUE
+TRUE
+Content from your output file:
+TRUE
+TRUE
+test case passed!
